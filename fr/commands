@@ -1,10 +1,10 @@
-*ALLUM[^ ]+ *$jv_pg_ww_prems*==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=On";
-*ETEIN[^ ]+ *$jv_pg_ww_prems*|*PEIN[^ ]*$jv_pg_ww_prems*==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=Off";
-*$jv_pg_ww_prems+ *ROUGE*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ff0000&brightness=100&iswhite=false";
-*$jv_pg_ww_prems+ *BLEU*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=0048ff&brightness=100&iswhite=false";
-*$jv_pg_ww_prems+ *VERT*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=00ff09&brightness=100&iswhite=false";
-*$jv_pg_ww_prems+ *JAUNE*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ffea00&brightness=100&iswhite=false";
-*$jv_pg_ww_prems+ *ROSE*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=e100ff&brightness=100&iswhite=false";
+*ALLUM[^ ]*${jv_pg_ww_prems}*==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=On";
+*ETEIN[^ ]*${jv_pg_ww_prems}*|*PEIN[^ ]*${jv_pg_ww_prems}*==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=Off";
+*$jv_pg_ww_prems*ROUGE*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ff0000&brightness=100&iswhite=false";
+*$jv_pg_ww_prems*BLEU*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=0048ff&brightness=100&iswhite=false";
+*$jv_pg_ww_prems*VERT*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=00ff09&brightness=100&iswhite=false";
+*$jv_pg_ww_prems*JAUNE*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ffea00&brightness=100&iswhite=false";
+*$jv_pg_ww_prems*ROSE*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=e100ff&brightness=100&iswhite=false";
 *$jv_pg_ww_prems*VIOLET*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ae00ff&brightness=100&iswhite=false";
 *$jv_pg_ww_prems*ORANGE*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ff6200&brightness=100&iswhite=false";
 *$jv_pg_ww_prems*BLANC*== jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ffffff&brightness=100&iswhite=false";
